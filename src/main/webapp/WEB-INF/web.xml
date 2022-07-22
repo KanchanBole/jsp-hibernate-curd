@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>hibernate-jsp-integration-webApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<jsp-file>/registration_controller.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>signin</servlet-name>
+		<url-pattern>/signin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>signin</servlet-name>
+		<jsp-file>/signin_controller.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<jsp-file>/delete_controller.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>edit</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>edit</servlet-name>
+		<jsp-file>/edit_controller.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateEmployee</servlet-name>
+		<url-pattern>/updateEmployee</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updateEmployee</servlet-name>
+		<jsp-file>/update_controller.jsp</jsp-file>
+	</servlet>
+
+</web-app>
